@@ -1,20 +1,224 @@
+# 🏙️ Sentracity@360 Command Center
+
+### AI-Driven Smart City Infrastructure Monitoring & Public Safety System
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+
+**An Intelligent Smart City Platform for Real-Time Infrastructure Monitoring, Public Safety, and AI-Powered Urban Analytics**
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+# 📖 Overview
 
-View your app in AI Studio: https://ai.studio/apps/1a6eb8f0-f426-4635-ba85-89294dd29a28
+**Sentracity@360 Command Center** is an AI-powered Smart City platform designed to monitor urban infrastructure and public safety using Computer Vision, Artificial Intelligence, and IoT technologies.
 
-## Run Locally
+The platform analyzes live CCTV feeds, traffic cameras, drone imagery, and IoT sensor data to detect incidents such as traffic violations, road damages, overcrowding, waste accumulation, and emergency situations. It provides real-time alerts, interactive dashboards, and predictive analytics to help city authorities make faster and smarter decisions.
 
-**Prerequisites:**  Node.js
+---
+
+# 🚀 Features
+
+* 🚦 Real-Time Traffic Monitoring
+* 🚗 Traffic Violation Detection using YOLOv8
+* 🛣️ Road Damage Detection
+* 👥 Crowd Density Monitoring
+* 🗑️ Smart Waste Management
+* 🚨 Public Safety & Incident Detection
+* 📊 Interactive Analytics Dashboard
+* 🗺️ GIS Heatmap Visualization
+* 🔔 Real-Time Alert Management
+* 🤖 AI Model Monitoring
+* 📈 Predictive Analytics
+* 🌐 Responsive Bento Grid Dashboard
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* Next.js 
+* Tailwind CSS
+* Shadcn/UI
+* Framer Motion
+* Recharts
+* Google Maps API / Leaflet
+
+## Backend
+
+* Python
+* FastAPI 
+  
+
+## Artificial Intelligence
+
+* YOLOv8 (Ultralytics)
+* OpenCV
+* PyTorch
+
+## Database
+
+* PostgreSQL(Superbase or Neon)
+  
+
+## Cloud & Deployment
+* Vercel (frontend)
+* Render/Railway(FastAPI)
+  
+## Real-time
+* WebSockets
+
+## Storage  
+* PostgreSQL
+
+  
+# 📂 Project Structure
+
+```
+Sentracity@360/
+│
+├── app/
+├── components/
+├── public/
+├── assets/
+├── hooks/
+├── lib/
+├── styles/
+├── utils/
+├── services/
+├── ai-models/
+├── pages/
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## Prerequisites
+
+* Node.js (v18 or above)
+* npm or yarn
+* Gemini API Key
+
+---
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/sentracity360.git
+
+cd sentracity360
+```
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Configure Environment Variables
+
+Create a `.env.local` file in the root directory.
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+---
+
+## Run the Development Server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 🤖 AI Modules
+
+The system integrates multiple AI models for intelligent city monitoring.
+
+| Module                      | AI Model        |
+| --------------------------- | --------------- |
+| Traffic Violation Detection | YOLOv8          |
+| Vehicle Detection           | YOLOv8          |
+| Road Damage Detection       | YOLOv8          |
+| Crowd Monitoring            | YOLOv8 + OpenCV |
+| Waste Detection             | YOLOv8          |
+| Incident Detection          | Computer Vision |
+
+---
+
+# 📊 Dashboard Modules
+
+* Mission Control Dashboard
+* Traffic Intelligence
+* Infrastructure Health
+* Crowd Vision
+* Waste Monitoring
+* Incident Center
+* Heatmap Analytics
+* AI Engine Status
+* Reports & Analytics
+* System Settings
+
+---
+
+# 🎯 Target Users
+
+* Smart City Authorities
+* Municipal Corporations
+* Traffic Police
+* Emergency Response Teams
+* Urban Planning Departments
+* Government Agencies
+
+---
+
+# 📷 Screenshots
+
+> Add screenshots of your Bento Grid Dashboard, Traffic Monitoring, Heatmaps, Alerts, and AI Analytics here.
+
+---
+
+# 🔮 Future Enhancements
+
+* Live Drone Integration
+* Edge AI Processing
+* Predictive Traffic Management
+* AI Chat Assistant
+* Smart Parking Analytics
+* Emergency Route Optimization
+* Digital Twin Integration
+* Mobile Application
+
+---
+
+# 👨‍💻 Developed By
+
+**Nausheen Naaz**
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+AI-Driven Smart City Infrastructure Monitoring & Public Safety System
+
+---
+
+# 📜 License
+
+This project is developed for academic and research purposes.
