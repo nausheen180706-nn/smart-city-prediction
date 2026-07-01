@@ -21,7 +21,7 @@ export default function AlertsCenter() {
   const triggerTestAlert = () => {
     setTestLog('SENDING...');
     setTimeout(() => {
-      setTestLog('AUTOMATED BROADCAST DEPLOYED: Aegis alert dispatched successfully to target dispatch nodes.');
+      setTestLog('AUTOMATED BROADCAST DEPLOYED: SentraCity@360 alert dispatched successfully to target dispatch nodes.');
       setAlertsHistory(prev => [
         {
           id: `ALT-0${Math.floor(100 + Math.random() * 899)}`,
@@ -214,7 +214,7 @@ export default function AlertsCenter() {
 
           <div className="mt-5 text-[9px] text-slate-500 border-t border-white/5 pt-3 leading-relaxed flex items-center justify-between">
             <span>AUTOMATION AUDITS ENCRYPTED UNDER AES-GCM 256</span>
-            <span>AEGIS CONTROL CENTER READY</span>
+            <span>SENTRACITY@360 CONTROL CENTER READY</span>
           </div>
         </div>
 

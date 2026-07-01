@@ -32,6 +32,11 @@ export default function App() {
   const [collapsed, setCollapsed] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [simulatedTicks, setSimulatedTicks] = useState(0);
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
 
   // Trigger telemetry fluctuation Simulation
   const handleTriggerSimulate = () => {
@@ -228,10 +233,10 @@ export default function App() {
               </div>
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl flex flex-col justify-between">
                 <div>
-                  <h3 className="font-bold text-slate-200 uppercase border-b border-white/5 pb-2">Aegis AI Identity Credentials</h3>
-                  <p className="text-slate-400 mt-2 font-sans">Aegis Terminal connects natively with Google Cloud for compute fallback pipelines, complying with strict ISO/IEC security certificates templates.</p>
+                  <h3 className="font-bold text-slate-200 uppercase border-b border-white/5 pb-2">SentraCity@360 Identity Credentials</h3>
+                  <p className="text-slate-400 mt-2 font-sans">SentraCity@360 Terminal connects natively with Google Cloud for compute fallback pipelines, complying with strict ISO/IEC security certificates templates.</p>
                 </div>
-                <span className="text-[10px] text-slate-500 border-t border-white/5 pt-3 text-center uppercase">AEGIS COMMAND TERMINAL</span>
+                <span className="text-[10px] text-slate-500 border-t border-white/5 pt-3 text-center uppercase">SENTRACITY@360 COMMAND TERMINAL</span>
               </div>
             </div>
           </div>
@@ -243,7 +248,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-[#050508] text-slate-300 antialiased font-sans select-none" id="aegis-command-center-root">
+    <div className={`flex h-screen w-screen overflow-hidden ${theme === 'light' ? 'bg-[#f1f5f9] text-slate-700 light-theme' : 'bg-[#050508] text-slate-300'} antialiased font-sans select-none`} id="sentracity-command-center-root">
       {/* Background neon ambient glows */}
       <div className="absolute top-[-20%] left-[-10%] h-[600px] w-[600px] rounded-full bg-cyan-500/5 blur-[150px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] h-[600px] w-[600px] rounded-full bg-purple-500/5 blur-[150px] pointer-events-none" />
@@ -263,6 +268,8 @@ export default function App() {
           onSearch={handleSearch}
           systemAlertsCount={2}
           triggerSystemSimulate={handleTriggerSimulate}
+          theme={theme}
+          toggleTheme={toggleTheme}
         />
 
         {/* 3. SCROLLABLE ACTIVE LAYER VIEWPORT */}

@@ -66,7 +66,7 @@ export default function Sidebar({
               className="flex flex-col select-none"
             >
               <span className="text-sm font-black tracking-wider uppercase bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                AEGIS COMMAND
+                SentraCity@360
               </span>
               <span className="text-[10px] font-mono text-cyan-500/75 tracking-widest flex items-center gap-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-green-400 animate-ping inline-block" />
